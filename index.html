@@ -5,17 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .text{
+            background-color: blue;
+            text-align: center;
+        }
+        #hi{
+            
+        }
+    </style>
 </head>
 <body>
 <!--     
 <h1>Hello</h1>
 <div class="container"><button id="logn-btn">Logi  dmnn</button></div> -->
-<h1 id="hi">hello</h1>
+<div id="hi">
+
+    <h2> h2 </h2>
+    <h3 id="myh3"> h3</h3>
+
+</div>
 <button onclick="jh()">Hello</button>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quia, laboriosam vitae obcaecati labore eius nam porro! Omnis, ad perspiciatis nobis molestiae porro repellendus natus rerum facere earum! Esse, in.</p>
-    <script>
+    <script>  
         function jh(){
-        document.getElementById("hi").innerHTML = "<h1>Hello g</h1>";
+        let abc=document.getElementById("hi");
+       // abc.style.textAlign='center'
+        abc.classList.add('text')
+        //let myarr = ["abc",1,2,2,3,4,"def","1.1",1.12]
+       // console.log(abc.attributes)
+        // abc.getElementsByTagName('h3')[0].innerHTML="helllo"
+        // abc.children[1].innerHTML='h3 my update'
+    //    document.getElementById("hi").innerText = "abc";
         // let element =document.getElementById("logn-btn").innerHTML
         // let element =document.getElementById("logn-btn").attributes"id"
 
